@@ -1,0 +1,243 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.top {
+  background: linear-gradient(rgba(0, 0, 0, 0.795), rgb(8, 8, 1)),
+    url(./images/images.jpg);
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.top h1 {
+  color: rgb(251, 255, 0);
+  text-transform: uppercase;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  font-size: 25px;
+  cursor: pointer;
+}
+.list {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  width: 420px;
+  top: 4%;
+  left: 65%;
+  font-size: 20px;
+  list-style-type: none;
+}
+.list li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.tag2:hover {
+  border-bottom: 2px solid yellow;
+  padding-bottom: 5px;
+  transition: 0.7s;
+}
+.tag2 {
+  border-bottom: 2px solid rgb(255, 0, 0);
+  padding-bottom: 5px;
+}
+.tag3 {
+  background-color: rgb(255, 230, 0);
+  padding: 6px 12px;
+  border-radius: 0.3em;
+  font-size: 17px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.623);
+}
+.tag3:hover {
+  color: black;
+  transition: 0.7s;
+}
+.hero {
+  width: fit-content;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  height: 30vh;
+}
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 1em;
+  color: yellow;
+  text-transform: uppercase;
+}
+.hero p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+.btns {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  display: flex;
+
+  width: 200px;
+  justify-content: space-between;
+}
+.btns a {
+  text-decoration: none;
+  color: yellow;
+}
+button {
+  text-transform: uppercase;
+  padding: 6px 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid rgb(217, 255, 0);
+  border-radius: 0.3em;
+}
+
+button:hover {
+  background-color: rgb(238, 255, 0);
+  transition: 0.7s ease-out;
+  color: brown;
+}
+.btns a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1160px) {
+  .list {
+    width: 420px;
+    top: 4%;
+    left: 45%;
+    font-size: 20px;
+  }
+  .hero {
+    left: 20%;
+  }
+  .artc {
+    margin: 0;
+  }
+
+  .textt {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .textt div p {
+    font-size: 15px;
+    width: 100%;
+  }
+  .main {
+    padding-bottom: 250px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .list {
+    top: -500px;
+    transition: 1s;
+    height: 17vh;
+    display: block;
+    padding: 2em;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.623);
+    /* display: none; */
+  }
+  .list.open-list {
+    display: block;
+    top: 50px;
+  }
+  .list li {
+    margin-bottom: 24px;
+  }
+  .hero {
+    left: 10%;
+  }
+  .hero p {
+    margin-top: -1em;
+    margin-bottom: 2em;
+    font-size: 17px;
+  }
+  .btns {
+    margin-top: 2em;
+    left: 30%;
+  }
+  .burger {
+    position: absolute;
+    top: 4%;
+    left: 90%;
+  }
+  .burger div {
+    background-color: white;
+    height: 5px;
+    width: 40px;
+
+    margin-bottom: 5px;
+  }
+}
+.main {
+  height: 100vh;
+}
+.main1 {
+  padding: 30px 40px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main1 p {
+  font-size: 30px;
+  color: rgb(0, 255, 21);
+}
+
+.main1 h1 {
+  width: fit-content;
+  padding-bottom: 8px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin: 30px 0px;
+  border-bottom: 2px solid rgb(9, 255, 0);
+}
+
+.artc {
+  margin: 0 20px;
+}
+
+.textt h2 {
+  padding: 20px;
+  text-transform: uppercase;
+  color: green;
+}
+
+.textt {
+  width: 90%;
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: -10em;
+}
+.element {
+  display: flex;
+  justify-content: space-around;
+}
+.blog {
+  height: 100vh;
+  background: linear-gradient(rgb(245, 244, 244), rgb(189, 187, 187));
+}
+.element img {
+  border-radius: 1em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.623);
+}
+.map {
+  display: flex;
+  border-radius: 10px;
+  padding: 1em;
+  justify-content: space-between;
+  width: 700px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.623);
+  position: relative;
+}
+.clicked {
+  height: 60px;
+  width: 233.33px;
+  background-color: white;
+  position: absolute;
+}
